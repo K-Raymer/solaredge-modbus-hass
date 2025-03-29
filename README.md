@@ -1,3 +1,5 @@
+Testing in progress. Forked 
+
 # solaredge-modbus-hass
 A custom platform component/sensor for reading SolarEdge Modbus TCP into Home Assistant https://home-assistant.io/
 
@@ -16,7 +18,7 @@ This component reads all registers every reading to make sure it can't get out o
 # How to install
 
 Though HACS:
-Add custom repository: https://github.com/erikarenhill/solaredge-modbus-hass/
+
 
 Or manual install:
 Copy custom_components/solaredge_modbus to your hass data directory (where your configuration.yaml lives). It should go into the same directory structure (YOUR_CONFIG_DIRECTORY/custom_components/solaredge_modbus)
@@ -30,9 +32,6 @@ Just add "read_meter1: true" to the configuration block. For now it only support
 
 
 
----
 
-
-If you like this component, you can always buy me a coffee
 
 <a href="https://www.buymeacoffee.com/gax2VUf" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-yellow.png" alt="Buy Me A Coffee" style="height: 20px !important;width: 100px !important;" ></a>
