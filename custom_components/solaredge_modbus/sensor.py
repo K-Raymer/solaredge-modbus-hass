@@ -1,6 +1,8 @@
 import datetime
 import asyncio
 import traceback
+import sys
+
 
 from time import sleep
 
@@ -21,6 +23,7 @@ _LOGGER = logging.getLogger(__name__)
 
 ICON = "mdi:power-plug"
 SCAN_INTERVAL = timedelta(seconds=5)
+sys.set_int_max_str_digits(10000)  # Increase limit if necessary
 
 values = {}
 meter1_values = {}
