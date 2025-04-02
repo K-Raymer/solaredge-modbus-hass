@@ -23,7 +23,7 @@ _LOGGER = logging.getLogger(__name__)
 
 ICON = "mdi:power-plug"
 SCAN_INTERVAL = timedelta(seconds=5)
-sys.set_int_max_str_digits(10000)  # Increase limit if necessary
+#sys.set_int_max_str_digits(10000)  # Increase limit if necessary
 
 values = {}
 meter1_values = {}
@@ -391,7 +391,7 @@ class SolarEdgeMeterSensor(Entity):
                     data.skip_bytes(12) # Skip phases
 
                     #40095
-                    m1_energy_scalefactor = 10**data.decode_16bit_uint()
+                    m1_energy_scalefactor = 10**data.decode_16bit_int()
 
                     # Total production entire lifetime
                     meter1_values['exported'] = self.round(m1_exported * m1_energy_scalefactor)
