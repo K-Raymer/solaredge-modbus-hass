@@ -389,7 +389,7 @@ class SolarEdgeMeterSensor(Entity):
                     data.skip_bytes(12) # Skip phases
 
                     #40095
-					m1_energy_scalefactor = 10**data.decode_16bit_int()
+                    m1_energy_scalefactor = 10**data.decode_16bit_int()
 
                     # Total production entire lifetime
                     meter1_values['exported'] = self.round(m1_exported * m1_energy_scalefactor)
