@@ -10,7 +10,7 @@ import logging
 from homeassistant.const import CONF_SCAN_INTERVAL
 
 from pyModbusTCP.client import ModbusClient
-from pymodbus.constants import Endian
+from .constants import Endian
 
 from .payload import BinaryPayloadDecoder
 
